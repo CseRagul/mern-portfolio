@@ -1,0 +1,212 @@
+ 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #1f1f1f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+ 
+#about {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#about p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+ 
+#skills {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.skills-table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.skills-table td {
+  padding: 15px 20px;
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.skills-table td:hover {
+  background-color: #3a3a5a;
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+ 
+#projects {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.project-card p {
+  line-height: 1.5;
+} 
+#contact {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#contact button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #45a049;
+} 
+#admin-messages {
+  max-width: 900px;
+  margin: auto;
+}
+
+.message-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.message-card.read {
+  background-color: #f0f0f0;
+}
+
+.message-card button {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.message-card button:hover {
+  background-color: #45a049;
+}
+
+.message-card .read-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+} 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  #skills, #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
