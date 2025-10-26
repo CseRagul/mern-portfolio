@@ -1,7 +1,7 @@
 {
   "name": "mern-portfolio-frontend",
   "version": "0.1.0",
-  "homepage": "https://CseRagul.github.io/mern-portfolio/",
+ "homepage": "https://cseragul.github.io/mern-portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
